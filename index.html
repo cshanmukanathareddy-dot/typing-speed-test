@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Typing Speed Test</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>⌨️ Typing Speed Test</h1>
+        <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+        <!-- Paragraph -->
+        <div class="paragraph-box">
+            <p id="paragraph"></p>
+        </div>
+
+        <!-- Typing Area -->
+        <textarea
+            id="input"
+            placeholder="Start typing here..."
+            autocomplete="off"
+            spellcheck="false"></textarea>
+
+        <!-- Statistics -->
+        <div class="stats">
+
+            <div class="card">
+                <h2 id="time">60</h2>
+                <span>Time Left</span>
+            </div>
+
+            <div class="card">
+                <h2 id="wpm">0</h2>
+                <span>WPM</span>
+            </div>
+
+            <div class="card">
+                <h2 id="accuracy">100%</h2>
+                <span>Accuracy</span>
+            </div>
+
+            <div class="card">
+                <h2 id="mistakes">0</h2>
+                <span>Mistakes</span>
+            </div>
+
+        </div>
+
+        <!-- Restart -->
+        <button id="restart">
+            Restart Test
+        </button>
+
+    </div>
+
+    <!-- Result Popup -->
+
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+
+            <h2>🏆 Test Completed</h2>
+
+           <h3 id="rating"></h3>
+
+<p>⚡ WPM : <span id="finalWPM"></span></p>
+
+<p>🎯 Accuracy : <span id="finalAccuracy"></span></p>
+
+<p>❌ Mistakes : <span id="finalMistakes"></span></p>
+
+            <button id="closePopup">
+                Try Again
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
